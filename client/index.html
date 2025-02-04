@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cozy Threads - Checkout</title>
+    
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="./index.js" defer></script>
+  </head>
+
+  <body>
+    <header class="navbar">
+      <div class="cart-container">
+        <button id="cart-button">Cart 🛒 (<span id="cart-count">0</span>)</button>
+        <div id="cart-dropdown" class="cart-dropdown">
+          <h3>Your Shopping Cart</h3>
+          <div id="cart-items"></div> <!-- ✅ Cart items appear here -->
+    </header>
+    <div class="container">
+      <h1>Cozy Threads Store</h1>
+      <h2>Our Collection</h2>
+      <div id="product-list" class="product-list"></div>
+      <div id="payment-summary"></div>
+      <form id="payment-form">
+      
+        <div id="payment-element"></div>
+        
+        <p id="payment-message"></p>
+      </form>
+      <button id="submit" type="button">Checkout</button>
+      
+    </div>  
+    
+</div>
+    </div>
+</body>
+</html>
